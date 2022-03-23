@@ -20,6 +20,8 @@ lazy val asstsw = project in file("assignment-spark-wordcount")
 
 lazy val asstch = project in file("asst-cache")
 
+lazy val assamr = project in file("assignment-analyzing-movie-rating")
+
 lazy val concor = project in file("concordance")
 
 lazy val fp = project in file("functional-programming")
@@ -40,7 +42,7 @@ lazy val sparkapp = project in file("spark-app")
 
 lazy val sparkcsv = project in file("spark-csv")
 
-lazy val root = (project in file(".")).aggregate(assthw, asstmd, asstrs, asstfc, asstwc, asstsw, fp, num,  mapred, concor, labsort, labparser, labactors, lab99, asstch, sparkapp, sparkcsv)
+lazy val root = (project in file(".")).aggregate(assthw, asstmd, asstrs, asstfc, asstwc, asstsw, fp, num,  mapred, concor, labsort, labparser, labactors, lab99, asstch, sparkapp, sparkcsv, assamr)
 
 parallelExecution in Test := false
 
